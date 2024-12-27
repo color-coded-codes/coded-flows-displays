@@ -1,0 +1,13 @@
+name: Displays
+pname: displays
+description: Coded Flows displays bricks
+version: 0.1.0
+icon: chart-histogram
+private: false
+base: true
+category: base_flow_management
+python:
+  - '3.9'
+  - '3.10'
+  - '3.11'
+  - '3.12'
