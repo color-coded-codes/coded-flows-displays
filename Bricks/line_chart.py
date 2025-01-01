@@ -1,4 +1,5 @@
-from coded_flows.types import Str
+from typing import Union
+from coded_flows.types import List, DataSeries, NDArray, DataRecords, DataFrame
 
 
 coded_flows_metadata = {
@@ -7,19 +8,28 @@ coded_flows_metadata = {
     "type": "graph",
     "icon": "chart-line",
     "frame_type": "landscape",  # landscap, portrait, square, 200x300
+    "options": [
+        {
+            "name": "encoding__y__field",
+            "display_name": "values field for 'y'",
+            "type": "input",
+            "default": "y",
+        }
+    ],
     "vl_schema": {
         "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+        "data": {"name": "data"},
         "transform": [
             {"window": [{"op": "row_number", "as": "x"}]},
         ],
         "mark": {"type": "line", "color": ""},
         "encoding": {
             "x": {"field": "x", "type": "ordinal", "title": None},
-            "y": {"field": "values", "type": "quantitative", "title": None},
+            "y": {"field": "y", "type": "quantitative", "title": None},
         },
     },
 }
 
 
-def line_chart(values: Str):
+def line_chart(y: Union[List, DataSeries, NDArray, DataRecords, DataFrame], options):
     pass

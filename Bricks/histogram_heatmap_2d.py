@@ -1,16 +1,70 @@
-from coded_flows.types import Str
+from typing import Union
+from coded_flows.types import List, DataSeries, NDArray, DataRecords, DataFrame
 
 
 coded_flows_metadata = {
-    "display_name": "Line Chart Display",
+    "display_name": "2D Histogram Heatmap",
     "description": "Display one line chart.",
     "type": "graph",
     "icon": "chart-scatter",
-    "options": [{"name": "separator", "type": "input", "default": "_"}],
+    "options": [
+        {
+            "name": "encoding__x__field",
+            "display_name": "values field for 'x'",
+            "type": "input",
+            "default": "x",
+        },
+        {
+            "name": "encoding__x__type",
+            "display_name": "'x' field type",
+            "type": "select",
+            "choices": [
+                "quantitative",
+                "ordinal",
+                "nominal",
+            ],
+            "default": "quantitative",
+        },
+        {
+            "name": "encoding__y__field",
+            "display_name": "values field for 'y'",
+            "type": "input",
+            "default": "y",
+        },
+        {
+            "name": "encoding__y__type",
+            "display_name": "'y' field type",
+            "type": "select",
+            "choices": [
+                "quantitative",
+                "ordinal",
+                "nominal",
+            ],
+            "default": "quantitative",
+        },
+        {
+            "name": "encoding__x__bin__maxbins",
+            "display_name": "max bins for 'x'",
+            "type": "integer",
+            "step": 5,
+            "max": 300,
+            "min": 5,
+            "default": 40,
+        },
+        {
+            "name": "encoding__y__bin__maxbins",
+            "display_name": "max bins for 'y'",
+            "type": "integer",
+            "step": 5,
+            "max": 300,
+            "min": 5,
+            "default": 40,
+        },
+    ],
     "frame_type": "500x500",  # landscap, portrait, square, 200x300
     "vl_schema": {
         "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-        "data": {"url": "data/movies.json"},
+        "data": {"name": "data"},
         "transform": [
             {
                 "filter": {
@@ -24,7 +78,7 @@ coded_flows_metadata = {
         "mark": "rect",
         "encoding": {
             "x": {
-                "bin": {"maxbins": 60},
+                "bin": {"maxbins": 40},
                 "field": "x",
                 "type": "quantitative",
             },
@@ -40,5 +94,9 @@ coded_flows_metadata = {
 }
 
 
-def histogram_heatmap_2d(values: Str, options):
+def histogram_heatmap_2d(
+    x: Union[List, DataSeries, NDArray, DataRecords, DataFrame],
+    y: Union[List, DataSeries, NDArray, DataRecords, DataFrame],
+    options,
+):
     pass

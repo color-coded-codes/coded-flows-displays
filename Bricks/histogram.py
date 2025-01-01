@@ -1,4 +1,5 @@
-from coded_flows.types import Str
+from typing import Union
+from coded_flows.types import List, DataSeries, NDArray, DataRecords, DataFrame
 
 
 coded_flows_metadata = {
@@ -22,5 +23,9 @@ coded_flows_metadata = {
 }
 
 
-def histogram(values: Str, options):
+def histogram(
+    x: Union[List, DataSeries, NDArray, DataRecords, DataFrame],
+    y: Union[List, DataSeries, NDArray, DataRecords, DataFrame],
+    options,
+):
     pass
