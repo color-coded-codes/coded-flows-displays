@@ -17,7 +17,6 @@ coded_flows_metadata = {
         }
     ],
     "vl_schema": {
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
         "data": {"name": "data"},
         "transform": [
             {"window": [{"op": "row_number", "as": "x"}]},

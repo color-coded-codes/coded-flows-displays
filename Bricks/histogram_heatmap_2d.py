@@ -4,7 +4,7 @@ from coded_flows.types import List, DataSeries, NDArray, DataRecords, DataFrame
 
 coded_flows_metadata = {
     "display_name": "2D Histogram Heatmap",
-    "description": "Display one line chart.",
+    "description": "2D Histogram Heatmap.",
     "type": "graph",
     "icon": "chart-scatter",
     "options": [
@@ -63,7 +63,6 @@ coded_flows_metadata = {
     ],
     "frame_type": "500x500",  # landscap, portrait, square, 200x300
     "vl_schema": {
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
         "data": {"name": "data"},
         "transform": [
             {
@@ -81,11 +80,13 @@ coded_flows_metadata = {
                 "bin": {"maxbins": 40},
                 "field": "x",
                 "type": "quantitative",
+                "title": None,
             },
             "y": {
                 "bin": {"maxbins": 40},
                 "field": "y",
                 "type": "quantitative",
+                "title": None,
             },
             "color": {"aggregate": "count", "type": "quantitative"},
         },
