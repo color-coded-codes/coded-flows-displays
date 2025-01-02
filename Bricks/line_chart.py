@@ -23,8 +23,8 @@ coded_flows_metadata = {
         ],
         "mark": {"type": "line", "color": ""},
         "encoding": {
-            "x": {"field": "x", "type": "ordinal", "title": None},
-            "y": {"field": "y", "type": "quantitative", "title": None},
+            "x": {"field": "x", "type": "ordinal", "title": ""},
+            "y": {"field": "y", "type": "quantitative", "title": ""},
         },
     },
 }

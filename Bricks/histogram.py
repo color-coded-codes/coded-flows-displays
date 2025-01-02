@@ -44,9 +44,9 @@ coded_flows_metadata = {
                 "bin": {"maxbins": 40},
                 "field": "x",
                 "type": "quantitative",
-                "title": None,
+                "title": "",
             },
-            "y": {"aggregate": "count", "title": None},
+            "y": {"aggregate": "count", "title": ""},
         },
     },
 }
