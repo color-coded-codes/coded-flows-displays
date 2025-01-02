@@ -61,7 +61,7 @@ coded_flows_metadata = {
             "default": 40,
         },
     ],
-    "frame_type": "500x500",  # landscap, portrait, square, 200x300
+    "frame_type": "500x500",  # landscape, portrait, square, 200x300
     "vl_schema": {
         "data": {"name": "data"},
         "transform": [

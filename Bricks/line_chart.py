@@ -7,7 +7,7 @@ coded_flows_metadata = {
     "description": "Display one line chart.",
     "type": "graph",
     "icon": "chart-line",
-    "frame_type": "landscape",  # landscap, portrait, square, 200x300
+    "frame_type": "landscape",  # landscape, portrait, square, 200x300
     "options": [
         {
             "name": "encoding__y__field",

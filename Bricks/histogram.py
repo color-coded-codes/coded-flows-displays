@@ -35,7 +35,7 @@ coded_flows_metadata = {
             "default": 40,
         },
     ],
-    "frame_type": "portrait",  # landscap, portrait, square, 200x300
+    "frame_type": "portrait",  # landscape, portrait, square, 200x300
     "vl_schema": {
         "data": {"name": "data"},
         "mark": "bar",
