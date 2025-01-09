@@ -1,4 +1,4 @@
-from typing import Union
+from typing import Union, Tuple
 from coded_flows.types import List, DataSeries, NDArray, DataRecords, DataFrame
 
 
@@ -99,5 +99,8 @@ def histogram_heatmap_2d(
     x: Union[List, DataSeries, NDArray, DataRecords, DataFrame],
     y: Union[List, DataSeries, NDArray, DataRecords, DataFrame],
     options,
-):
-    pass
+) -> Tuple[
+    Union[List, DataSeries, NDArray, DataRecords, DataFrame],
+    Union[List, DataSeries, NDArray, DataRecords, DataFrame],
+]:
+    return x, y

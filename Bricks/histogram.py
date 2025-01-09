@@ -55,5 +55,5 @@ coded_flows_metadata = {
 def histogram(
     x: Union[List, DataSeries, NDArray, DataRecords, DataFrame],
     options,
-):
-    pass
+) -> Union[List, DataSeries, NDArray, DataRecords, DataFrame]:
+    return x

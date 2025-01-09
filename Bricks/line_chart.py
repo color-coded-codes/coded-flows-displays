@@ -30,5 +30,7 @@ coded_flows_metadata = {
 }
 
 
-def line_chart(y: Union[List, DataSeries, NDArray, DataRecords, DataFrame], options):
-    pass
+def line_chart(
+    y: Union[List, DataSeries, NDArray, DataRecords, DataFrame], options
+) -> Union[List, DataSeries, NDArray, DataRecords, DataFrame]:
+    return y
