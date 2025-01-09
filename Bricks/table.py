@@ -25,5 +25,5 @@ coded_flows_metadata = {
 def table(
     data: Union[List, DataSeries, NDArray, DataRecords, DataFrame],
     options,
-):
-    pass
+) -> Union[List, DataSeries, NDArray, DataRecords, DataFrame]:
+    return data

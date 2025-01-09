@@ -10,5 +10,7 @@ coded_flows_metadata = {
 }
 
 
-def image_display(image: Union[PILImage, NDArray, Bytes, BytesIOType]):
-    pass
+def image_display(
+    image: Union[PILImage, NDArray, Bytes, BytesIOType]
+) -> Union[PILImage, NDArray, Bytes, BytesIOType]:
+    return image

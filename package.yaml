@@ -1,7 +1,7 @@
 name: Displays
 pname: displays
 description: Coded Flows displays bricks
-version: 0.2.1
+version: 0.2.2
 icon: chart-histogram
 private: false
 base: true
