@@ -21,7 +21,7 @@ coded_flows_metadata = {
         "transform": [
             {"window": [{"op": "row_number", "as": "x"}]},
         ],
-        "mark": {"type": "line", "color": ""},
+        "mark": {"type": "line", "color": "#4c78a8"},
         "encoding": {
             "x": {"field": "x", "type": "ordinal", "title": ""},
             "y": {"field": "y", "type": "quantitative", "title": ""},
