@@ -3,8 +3,8 @@ from coded_flows.types import DataRecords, DataFrame
 
 
 coded_flows_metadata = {
-    "display_name": "Line Chart Display",
-    "description": "Display one line chart.",
+    "display_name": "Geo Map Display",
+    "description": "Display a geo coordinates in a map.",
     "type": "map",
     "icon": "map-2",
     "frame_type": "500x500",  # landscape, portrait, square, 200x300
