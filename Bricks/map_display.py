@@ -33,15 +33,6 @@ coded_flows_metadata = {
             "type": "input",
             "default": "color",
         },
-        {
-            "name": "zoom_level",
-            "display_name": "zoom level",
-            "type": "integer",
-            "step": 1,
-            "max": 18,
-            "min": 0,
-            "default": 13,
-        },
     ],
 }
 
