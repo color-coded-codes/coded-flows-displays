@@ -22,7 +22,19 @@ coded_flows_metadata = {
             "default": "lon",
         },
         {
-            "name": "zoom",
+            "name": "popup_field",
+            "display_name": "values field for pop-up",
+            "type": "input",
+            "default": "popup",
+        },
+        {
+            "name": "color_field",
+            "display_name": "values field for marker color",
+            "type": "input",
+            "default": "color",
+        },
+        {
+            "name": "zoom_level",
             "display_name": "zoom level",
             "type": "integer",
             "step": 1,
