@@ -7,7 +7,7 @@ coded_flows_metadata = {
     "description": "Display a geo coordinates in a map.",
     "type": "map",
     "icon": "map-2",
-    "frame_type": "500x500",  # landscape, portrait, square, 200x300
+    "frame_type": "600x600",  # landscape, portrait, square, 200x300
     "options": [
         {
             "name": "latitude_field",
